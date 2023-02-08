@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSViaCEP</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="nav-container">
+        <nav class="nav-main">
+            <h1>DSViaCEP</h1>
+            <div class="contact-link">contato</div>
+        </nav>
+    </header>
+    <main>
+        <section id="form-section" class="form-container"> <!-- para uma possivel manutenção no futuro -->
+            <div class="card-form">
+                <form name="newAddress"> <!-- "name" serve para selecionar no JS-->
+                    <div class="form-control">
+                        <label for="cep">CEP:</label> <!-- serve por exemplo para alguma ferramenta fazer um teste automatizado, não será exibido neste caso-->
+                        <input name="cep" id="cep" class="form-input" type="text" placeholder="CEP"> <!-- "for" com mesmo nome "id" auxiliando ferramenta de JS, "name" pode selecionar o input pelo name-->
+                        <div class="error-message">Campo requerido</div>
+                    </div>
+                    <div class="form-control">
+                        <label for="street">Logradouro:</label> <!-- serve por exemplo para alguma ferramenta fazer um teste automatizado, não será exibido neste caso-->
+                        <input name="street" id="street" class="form-input" type="text" placeholder="Logradouro" disabled> <!-- "for" com mesmo nome "id" auxiliando ferramenta de JS, "name" pode selecionar o input pelo name-->
+                    </div>
+                    <div class="form-control">
+                        <label for="number">Número:</label> <!-- serve por exemplo para alguma ferramenta fazer um teste automatizado, não será exibido neste caso-->
+                        <input name="number" id="number" class="form-input" type="text" placeholder="Número"> <!-- "for" com mesmo nome "id" auxiliando ferramenta de JS, "name" pode selecionar o input pelo name-->
+                        <div class="error-message">Campo requerido</div>
+                    </div>
+                    <div class="form-control">
+                        <label for="city">Cidade:</label> <!-- serve por exemplo para alguma ferramenta fazer um teste automatizado, não será exibido neste caso-->
+                        <input name="city" id="city" class="form-input" type="text" placeholder="Cidade" disabled> <!-- "for" com mesmo nome "id" auxiliando ferramenta de JS, "name" pode selecionar o input pelo name-->
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-left" type="submit">Salvar</button>
+                        <button class="btn btn-right">Limpar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id="list-section" class="list-container">
+            <div class="card-list-item">
+                <h3>São Paulo</h3>
+                <p class="address-line">Rua dos jardins,720</p>
+                <p class="address-cep">11200-345</p>
+            </div>
+            <div class="card-list-item">
+                <h3>São Paulo</h3>
+                <p class="address-line">Rua dos jardins,720</p>
+                <p class="address-cep">11200-345</p>
+            </div>
+            <div class="card-list-item">
+                <h3>São Paulo</h3>
+                <p class="address-line">Rua dos jardins,720</p>
+                <p class="address-cep">11200-345</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
