@@ -26,7 +26,7 @@
                     <div class="form-control">
                         <label for="cep">CEP:</label> <!-- serve por exemplo para alguma ferramenta fazer um teste automatizado, não será exibido neste caso-->
                         <input name="cep" id="cep" class="form-input" type="text" placeholder="CEP"> <!-- "for" com mesmo nome "id" auxiliando ferramenta de JS, "name" pode selecionar o input pelo name-->
-                        <div class="error-message">Campo requerido</div>
+                        <div class="error-message" data-error="cep"></div>
                     </div>
                     <div class="form-control">
                         <label for="street">Logradouro:</label> <!-- serve por exemplo para alguma ferramenta fazer um teste automatizado, não será exibido neste caso-->
@@ -35,15 +35,15 @@
                     <div class="form-control">
                         <label for="number">Número:</label> <!-- serve por exemplo para alguma ferramenta fazer um teste automatizado, não será exibido neste caso-->
                         <input name="number" id="number" class="form-input" type="text" placeholder="Número"> <!-- "for" com mesmo nome "id" auxiliando ferramenta de JS, "name" pode selecionar o input pelo name-->
-                        <div class="error-message">Campo requerido</div>
+                        <div class="error-message" data-error="number"></div>
                     </div>
                     <div class="form-control">
                         <label for="city">Cidade:</label> <!-- serve por exemplo para alguma ferramenta fazer um teste automatizado, não será exibido neste caso-->
                         <input name="city" id="city" class="form-input" type="text" placeholder="Cidade" disabled> <!-- "for" com mesmo nome "id" auxiliando ferramenta de JS, "name" pode selecionar o input pelo name-->
                     </div>
                     <div class="btn-container">
-                        <button class="btn btn-left" type="submit">Salvar</button>
-                        <button class="btn btn-right">Limpar</button>
+                        <button name="btnSave" class="btn btn-left" type="submit">Salvar</button>
+                        <button name="btnClear" class="btn btn-right">Limpar</button>
                     </div>
                 </form>
             </div>
@@ -66,5 +66,7 @@
             </div>
         </section>
     </main>
+
+    <script type="module" src="js/dsviacep.js"></script>
 </body>
 </html>
